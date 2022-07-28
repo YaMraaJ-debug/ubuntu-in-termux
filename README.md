@@ -16,6 +16,9 @@ This is a script that allows you to install Ubuntu in your termux application wi
 
 **• If you get an error message that says "Fatal Kernel too old" you have to uncomment the line that reads "command+=" -k 4.14.81"" (remove the # that is located in front of the line) in the "startubuntu.sh" file**
 
+### Setup One Click
+
+```‌pkg install tsu && sudo su && apt-get update && apt-get upgrade -y && apt-get install proot -y && apt-get install wget -y && apt-get install git -y && git clone https://github.com/MFDGaming/ubuntu-in-termux.git && cd ubuntu-in-termux && chmod +x ubuntu.sh && ./ubuntu.sh -y && ./startubuntu.sh && whoami```
 ### Installation steps
 
 1. Update termux: `apt-get update && apt-get upgrade -y`
